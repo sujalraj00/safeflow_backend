@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Ganga River",
+      "type": "river",
+      "latitude": 25.617,
+      "longitude": 85.140
+    },
+    {
+      "name": "Koshi River",
+      "type": "river",
+      "latitude": 26.5,
+      "longitude": 86.95
+    },
+    {
+      "name": "Dal Lake",
+      "type": "lake",
+      "latitude": 34.0836,
+      "longitude": 74.7973
+    },
+    {
+      "name": "Bay of Bengal",
+      "type": "sea",
+      "latitude": 17.3850,
+      "longitude": 85.8000
+    }
+  ]
+  
