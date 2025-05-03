@@ -29,11 +29,11 @@ app.get('/', (req, res) => {
   });
   
 
-  const deviceRoutes = require('./routes/deviceRoutes');
-  const alertRoutes = require('./routes/alertRoutes');
+  // const deviceRoutes = require('./routes/deviceRoutes');
+  // const alertRoutes = require('./routes/alertRoutes');
   
-  app.use('/api/device', deviceRoutes);
-  app.use('/api/alert', alertRoutes);  
+  // app.use('/api/device', deviceRoutes);
+  // app.use('/api/alert', alertRoutes);  
 
 // Start Server
 const PORT = process.env.PORT || 4000;
