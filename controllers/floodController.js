@@ -45,13 +45,14 @@ const getWeatherData = async (lat, lon) => {
 
 // send to ml model for rainfall prediction
 const predictRainfall = async (lat, lon) => {
-  const rainfallUrl = process.env.RAINFALL_ML_MODEL_URL;
+  console.log('ML Rainfall API:', process.env.RAINFALL_ML_MODEL_URL);
+  const rainfallUrl = process.env.RAINFALL_ML_MODEL_URL || "https://rainfall-pred-1.onrender.com/predict" ;
   try {
     const { data } = await axios.post(rainfallUrl, { 
       Latitude: lat,
       Longitude: lon
     }, {
-      timeout: 5000
+      timeout: 8000
     });
 
     console.log("Rainfall ML API response:", data);
