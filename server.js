@@ -10,7 +10,7 @@ const predictionRoutes = require('./routes/prediction');
 const waterbodyRoutes = require('./routes/waterbodyRoutes');
 const floodRoutes = require('./routes/floodRoutes');
 const sosRoutes = require('./routes/sosRoutes');
-const tokenRoutes = require('./routes/TokenRoutes');
+//const tokenRoutes = require('./routes/TokenRoutes');
 const deviceRoutes = require('./routes/deviceRoutes');
 const alertRoutes = require('./routes/alertRoutes');
 
@@ -38,7 +38,7 @@ app.use(express.json());
 
 // Routes
 app.use('/api', floodRoutes);
-app.use('/api', tokenRoutes);
+//app.use('/api', tokenRoutes);
 app.use('/api', sosRoutes);
 app.use('/api/device', deviceRoutes);
 app.use('/api/alert', alertRoutes);
