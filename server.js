@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const mongoose = require('mongoose');
+//const mongoose = require('mongoose');
 const http = require('http');
 const { Server } = require('socket.io'); // ✅ Correct import
 
@@ -43,12 +43,12 @@ app.use('/api', floodRoutes);
 // app.use('/api/device', deviceRoutes);
 // app.use('/api/alert', alertRoutes);
 
-mongoose.connect(process.env.MONGO_URI, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
-.then(() => console.log("✅ MongoDB connected"))
-.catch(err => console.error("❌ MongoDB connection error:", err));
+// mongoose.connect(process.env.MONGO_URI, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// })
+// .then(() => console.log("✅ MongoDB connected"))
+// .catch(err => console.error("❌ MongoDB connection error:", err));
 
 app.get('/', (req, res) => {
   res.send('🌊 Flood backend running');
