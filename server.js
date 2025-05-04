@@ -9,10 +9,10 @@ const { Server } = require('socket.io'); // ✅ Correct import
 const predictionRoutes = require('./routes/prediction');
 const waterbodyRoutes = require('./routes/waterbodyRoutes');
 const floodRoutes = require('./routes/floodRoutes');
-const sosRoutes = require('./routes/sosRoutes');
+//const sosRoutes = require('./routes/sosRoutes');
 //const tokenRoutes = require('./routes/TokenRoutes');
-const deviceRoutes = require('./routes/deviceRoutes');
-const alertRoutes = require('./routes/alertRoutes');
+// const deviceRoutes = require('./routes/deviceRoutes');
+// const alertRoutes = require('./routes/alertRoutes');
 
 dotenv.config();
 
@@ -39,9 +39,9 @@ app.use(express.json());
 // Routes
 app.use('/api', floodRoutes);
 //app.use('/api', tokenRoutes);
-app.use('/api', sosRoutes);
-app.use('/api/device', deviceRoutes);
-app.use('/api/alert', alertRoutes);
+// app.use('/api', sosRoutes);
+// app.use('/api/device', deviceRoutes);
+// app.use('/api/alert', alertRoutes);
 
 mongoose.connect(process.env.MONGO_URI, {
   useNewUrlParser: true,
